@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./fonts/Dunkin Sans.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proximanova';
+    src: url('./fonts/Proximanova.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'CustomFont', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensure children are stacked vertically */
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px -2px rgba(0,0,0,1);
+    -webkit-box-shadow: 2px 2px 3px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 2px 3px -2px rgba(0,0,0,1);
+}
+
+.navbar div {
+    padding: 0 15px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    color: #3e342f;
+}
+
+.navbar div:hover {
+    color: #c63663; 
+}
+
+.navbar img {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.navbar img:first-child {
+    margin: 0 auto;
+}
+.banner {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(198,54,99);
+}
+
+.banner p {
+    margin: 0;
+    text-align: center;
+    font-size: large;
+    color: white;
+    font-size: 5px;
+}
+.right-product img{
+    margin-top: 30px;
+}
+.button{
+    color : white;
+    background-color: #c63663;
+    border-radius: 40px;
+    padding: 5px 20px 5px 20px;
+    max-width: max-content;
+}
+
+.teaser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 2000px;
+    margin: 0; /* Remove any margin */
+    padding: 20px; /* Optional: Add padding if needed */
+}
+
+.teaser-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px; /* Optional: Set a max-width if needed */
+    width: 100%;
+}
+
+.right-product {
+    flex: 1;
+}
+
+.left-product {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.left-product .title2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ef6a00;
+}
+
+.left-product .sub-title {
+    font-size: 38px;
+    margin-top: 10px;
+    color: #3e342f;
+    line-height: 40px;
+}
+
+.left-product .description {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.left-product .button {
+    margin-top: 20px;
+    margin-top: 50px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%; /* Ensure it takes the full width */
+    max-width: 1200px; /* Optional: Set a max-width if needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Optional: Add padding if needed */
+}
+
+.earn, .rewards, .unlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    padding: 20px; 
+    color: #3e342f;
+    width: 33.33%; /* Equal width for each column */
+}
+
+.image img {
+    width: 200px; /* Fixed width for images */
+    height: 200px; /* Fixed height for images */
+    object-fit: contain;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 44px; /* Force two lines */
+    line-height: 22px;
+    padding: 0 10px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description-earn {
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.earn .title::after, .rewards .title::after, .unlock .title::after {
+    content: "\A"; /* Insert a line break */
+    white-space: pre; /* Preserve the line break */
+}
+
+.earn .description-earn, .rewards .description-earn, .unlock .description-earn {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #3e342f;
+    padding: 0 10px;
+}
