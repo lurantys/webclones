@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'Sodo Sans';
+    src: url('fonts/SoDoSans-SemiBold.woff2') format('woff2'),
+         url('fonts/SoDoSans-SemiBold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'Sodo Sans', sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.logo svg {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 2px 5px -1px rgba(99,73,73,0.59);
+    -webkit-box-shadow: 1px 2px 5px -1px rgba(99,73,73,0.59);
+    -moz-box-shadow: 1px 2px 5px -1px rgba(99,73,73,0.59);
+}
+
+.menu {
+    display: flex;
+    margin-left: auto;
+}
+
+.menu > * {
+    margin: 20px;
+}
+
+.menu div:hover, .findastore:hover {
+    color: #006241;
+}
+
+.navbar > *{
+    margin: 20px;
+}
+
+.findastore{
+    align-items: center;
+    display: flex   ;
+    margin-left: auto;
+}
+
+.signin, .signup{
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 5px 20px 5px 20px;
+}
+
+.signup{
+    background-color: black;
+    color: white;
+}
+
+.signup:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.signin:hover{
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.product {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Add space between items */
+    padding: 20px; /* Optional: Add padding for spacing */
+}
+
+.leftproduct, .rightproduct {
+    flex: 1; /* Allow items to grow and fill the space */
+    max-width: 45%; /* Adjust max-width as needed */
+}
+
+.leftproduct img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.product-title {
+    color: #1e3932;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.product-description {
+    color: #1e3932;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 30px;
+    line-height: 1.5; /* Adjust line height for better readability */
+    max-width: 80%; /* Adjust max-width to control the width of the text */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-button {
+    border: 1px solid hsl(164, 31%, 17%);
+    color: hsl(164, 31%, 17%);
+    max-width: max-content;
+    padding: 5px 20px;
+    border-radius: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    flex: 1;
+    width: 100%;
+}
+
+.product-container {
+    max-width: 1200px; 
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.dark-background .product-description {
+    color: #ffffff; 
+}
+
+.product-button2 {
+    border: 1px solid white;
+    color: white;
+    max-width: max-content;
+    padding: 5px 20px;
+    border-radius: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.product-button3 {
+    border: 1px solid hsl(164 31% 17%);
+    color: hsl(164 31% 17%);
+    max-width: max-content;
+    padding: 5px 20px 5px 20px;
+    border-radius: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.product-button4 {
+    border: 1px solid white;
+    color: white;
+    max-width: max-content;
+    padding: 5px 20px 5px 20px;
+    border-radius: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.product-description2 {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 30px;
+    line-height: 1.5; /* Adjust line height for better readability */
+    max-width: 80%; /* Adjust max-width to control the width of the text */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-title2 {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto; /* Pushes footer to the bottom */
+color: rgb(0 0 0 / 58%);
+}
