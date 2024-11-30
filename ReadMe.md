@@ -12,3 +12,4 @@ The repository is organized as follows:
 
 - **`/` (Root)**: Contains this `README.md` file and other general documentation.  
 - **`/<Website Name>`**: Each subfolder represents a cloned website.  
+.
